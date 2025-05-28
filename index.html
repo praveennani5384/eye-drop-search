@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eye Drop Information Search</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold text-center mb-6">Eye Drop Information Search</h1>
+    
+    <div class="mb-4 relative">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search by Name, Brand, Category, or Formula..." 
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+      <div 
+        id="suggestions" 
+        class="absolute w-full bg-white border border-gray-300 rounded-md mt-1 shadow-md max-h-48 overflow-y-auto z-10 hidden"
+      ></div>
+    </div>
+
+    <table class="w-full bg-white shadow-md rounded-lg overflow-hidden mb-6">
+      <thead class="bg-blue-600 text-white">
+        <tr>
+          <th class="p-3 text-left">Name</th>
+          <th class="p-3 text-left">Formula</th>
+          <th class="p-3 text-left">Category</th>
+          <th class="p-3 text-left">Brand</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <div id="alternativesSection" class="bg-white p-4 shadow-md rounded-lg hidden">
+      <h2 class="text-xl font-semibold mb-3">Alternative Products (Same Formula)</h2>
+      <ul id="alternativesList" class="list-disc list-inside text-gray-700"></ul>
+    </div>
+  </div>
+
+  <script>
+    async function loadData() {
+      try {
+        const response = await fetch('./data.json');
+        if (!response.ok) throw new Error('Failed to load data.json');
+        return await response.json();
+      } catch (error) {
+        console.error('Error loading data:', error);
+        document.getElementById('tableBody').innerHTML = `
+          <tr><td colspan="4" class="p-3 text-center text-red-500">
+            Error loading data. Please ensure data.json is available.
+          </td></tr>
+        `;
+        return [];
+      }
+    }
+
+    function renderTable(data) {
+      const tableBody = document.getElementById('tableBody');
+      tableBody.innerHTML = '';
+      if (data.length === 0) {
+        tableBody.innerHTML = `
+          <tr><td colspan="4" class="p-3 text-center">No results found.</td></tr>
+        `;
+        document.getElementById('alternativesSection').classList.add('hidden');
+        return;
+      }
+      data.forEach(item => {
+        const row = document.createElement('tr');
+        row.className = 'border-b hover:bg-gray-50';
+        row.innerHTML = `
+          <td class="p-3">${item.Name || 'N/A'}</td>
+          <td class="p-3">${item.Formula || 'N/A'}</td>
+          <td class="p-3">${item.Category || 'N/A'}</td>
+          <td class="p-3">${item.Brand || 'N/A'}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+
+      // Check for alternatives if only one match
+      if (data.length === 1) {
+        const mainFormula = data[0].Formula;
+        const mainName = data[0].Name;
+        showAlternatives(mainFormula, mainName);
+      } else {
+        document.getElementById('alternativesSection').classList.add('hidden');
+      }
+    }
+
+    function showAlternatives(formula, excludeName) {
+      const list = document.getElementById('alternativesList');
+      const section = document.getElementById('alternativesSection');
+      const altData = globalData.filter(item => 
+        item.Formula === formula && item.Name !== excludeName
+      );
+
+      if (altData.length === 0) {
+        section.classList.add('hidden');
+        return;
+      }
+
+      list.innerHTML = '';
+      altData.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.Name} — ${item.Brand}`;
+        list.appendChild(li);
+      });
+      section.classList.remove('hidden');
+    }
+
+    function filterData(data, query) {
+      query = query.toLowerCase().trim();
+      if (!query) return data;
+      return data.filter(item => 
+        (item.Name || '').toLowerCase().includes(query) ||
+        (item.Formula || '').toLowerCase().includes(query) ||
+        (item.Category || '').toLowerCase().includes(query) ||
+        (item.Brand || '').toLowerCase().includes(query)
+      );
+    }
+
+    let globalData = [];
+
+    async function init() {
+      globalData = await loadData();
+      renderTable(globalData);
+
+      const searchInput = document.getElementById('searchInput');
+      const suggestionsBox = document.getElementById('suggestions');
+
+      searchInput.addEventListener('input', () => {
+        const query = searchInput.value.trim().toLowerCase();
+        const filteredData = filterData(globalData, query);
+        renderTable(filteredData);
+
+        const suggestions = globalData
+          .filter(item => item.Name.toLowerCase().includes(query))
+          .slice(0, 5)
+          .map(item => item.Name);
+
+        if (query && suggestions.length > 0) {
+          suggestionsBox.innerHTML = suggestions
+            .map(name => `<div class="p-2 hover:bg-blue-100 cursor-pointer">${name}</div>`)
+            .join('');
+          suggestionsBox.classList.remove('hidden');
+        } else {
+          suggestionsBox.classList.add('hidden');
+        }
+
+        suggestionsBox.querySelectorAll('div').forEach(div => {
+          div.addEventListener('click', () => {
+            searchInput.value = div.textContent;
+            const newFiltered = filterData(globalData, div.textContent);
+            renderTable(newFiltered);
+            suggestionsBox.classList.add('hidden');
+          });
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !suggestionsBox.contains(e.target)) {
+          suggestionsBox.classList.add('hidden');
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
