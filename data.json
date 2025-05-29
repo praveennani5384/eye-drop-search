@@ -2,757 +2,1325 @@
   {
     "Name": "Accunac Duo Eye Drop",
     "Formula": "Nepafenac (0.1% w/v)",
-    "Category": "",
-    "Brand": "His Eyeness Ophthalmics Pvt Ltd"
+    "Category": "NSAID",
+    "Brand": "His Eyeness Ophthalmics Pvt Ltd",
+    "uses": "Relieves pain and inflammation after cataract surgery.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Alcaft Eye Drop",
     "Formula": "Alcaftadine (2.5mg/ml)",
-    "Category": "",
-    "Brand": "Micro Labs Ltd"
+    "Category": "Antihistamine",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Treats itchy eyes due to allergic conjunctivitis.",
+    "conditions": [
+      "Not for children under 3.",
+      "Remove contact lenses before use."
+    ]
   },
   {
     "Name": "Alfabet PF Eye Drop",
     "Formula": "Timolol (0.5% w/v) + Brimonidine (0.2% w/v)",
-    "Category": "",
-    "Brand": "His Eyeness Ophthalmics Pvt Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "His Eyeness Ophthalmics Pvt Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "Not for patients with asthma or COPD.",
+      "Use with caution in heart problems."
+    ]
   },
   {
     "Name": "Allerpat",
     "Formula": "Olopatadine (0.1% w/v)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Antihistamine",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Relieves eye itching due to allergies.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Alphagan P Eye Drop",
     "Formula": "Brimonidine (0.15% w/v) + Stabilized Oxychloro (0.005% w/v)",
-    "Category": "",
-    "Brand": "Allergan India Pvt Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "Allergan India Pvt Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "Avoid activities requiring alertness.",
+      "Tell your doctor about heart or blood vessel problems."
+    ]
   },
   {
     "Name": "Alphagan Z 0.1%",
     "Formula": "Brimonidine (0.1% w/v) + Stabilized Oxychloro (0.005% w/v)",
-    "Category": "",
-    "Brand": "Allergan India Pvt Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "Allergan India Pvt Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "Avoid activities requiring alertness.",
+      "Tell your doctor about heart or blood vessel problems."
+    ]
   },
   {
     "Name": "Amplinak",
     "Formula": "Nepafenac (0.1% w/v)",
-    "Category": "",
-    "Brand": "AbbVie Therapeutics India Private Limited"
+    "Category": "NSAID",
+    "Brand": "AbbVie Therapeutics India Private Limited",
+    "uses": "Relieves pain and inflammation after cataract surgery.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Aquim PF Eye Drop",
     "Formula": "Sodium Hyaluronate (0.18% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "His Eyeness Ophthalmics Pvt Ltd"
+    "Brand": "His Eyeness Ophthalmics Pvt Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Aquim T Eye Drop",
     "Formula": "Sodium Hyaluronate (0.18% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "His Eyeness Ophthalmics Pvt Ltd"
+    "Brand": "His Eyeness Ophthalmics Pvt Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Atropine 1% Eye Drop",
     "Formula": "Atropine (1% w/v)",
-    "Category": "",
-    "Brand": "Jawa Pharmaceuticals Pvt Ltd"
+    "Category": "Cycloplegic/Mydriatic",
+    "Brand": "Jawa Pharmaceuticals Pvt Ltd",
+    "uses": "Dilates the pupil for eye exams and treats certain eye conditions.",
+    "conditions": [
+      "May cause blurred vision and light sensitivity.",
+      "Not for use in patients with narrow-angle glaucoma."
+    ]
   },
   {
     "Name": "Awarene PF Eye Drop",
     "Formula": "Travoprost (0.004% w/v)",
-    "Category": "",
-    "Brand": "His Eyeness Ophthalmics Pvt Ltd"
+    "Category": "Prostaglandin Analog",
+    "Brand": "His Eyeness Ophthalmics Pvt Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause darkening of the eyelashes and iris.",
+      "Consult a doctor for any changes in vision."
+    ]
   },
   {
     "Name": "Azarga Eye Drop",
     "Formula": "Brinzolamide (10mg) + Timolol (5mg)",
-    "Category": "",
-    "Brand": "Novartis India Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "Novartis India Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Azopt Opthalmic Suspension",
     "Formula": "Brinzolamide (1% w/v)",
-    "Category": "",
-    "Brand": "Novartis India Ltd"
+    "Category": "Carbonic Anhydrase Inhibitor",
+    "Brand": "Novartis India Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Bepolast eye drops",
     "Formula": "bepostatin besilate opthalamic solution (1.5%w/v)",
-    "Category": "",
-    "Brand": "apple"
+    "Category": "Antihistamine",
+    "Brand": "apple",
+    "uses": "Relieves itchy eyes due to allergies.",
+    "conditions": []
   },
   {
     "Name": "Brinzox 0.01",
     "Formula": "Brinzolamide (1% w/v)",
-    "Category": "",
-    "Brand": "Ajanta Pharma Ltd"
+    "Category": "Carbonic Anhydrase Inhibitor",
+    "Brand": "Ajanta Pharma Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Brinzox-T Eye Drop",
     "Formula": "Brinzolamide (1% w/v) + Timolol (0.5% w/v)",
-    "Category": "",
-    "Brand": "Ajanta Pharma Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "Ajanta Pharma Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "C-Nac Eye Drop",
     "Formula": "Carboxymethylcellulose (3mg/ml) + Glycerin (10mg/ml) + n-acetylcarnosine (10mg/ml)",
-    "Category": "",
-    "Brand": "Intas Pharmaceuticals Ltd"
+    "Category": "Cataract Support/Lubricant",
+    "Brand": "Intas Pharmaceuticals Ltd",
+    "uses": "May help reduce cataract progression and lubricate the eye.",
+    "conditions": [
+      "More research is needed to confirm the efficacy of n-acetylcarnosine.",
+      "Consult a doctor for cataract treatment."
+    ]
   },
   {
     "Name": "Careprost Plus Eye Drop",
     "Formula": "Bimatoprost (0.3mg/ml) + Timolol (5mg/ml)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause darkening of the eyelashes and iris.",
+      "Consult a doctor for any changes in vision."
+    ]
   },
   {
     "Name": "Cellwet Eye Drop",
     "Formula": "Polyethylene Glycol (0.4% w/v) + Propylene Glycol (0.3% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Cellwet Ultra Eye Drop",
     "Formula": "Polyethylene Glycol (0.4% w/v) + Propylene Glycol (0.3% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Combigan",
     "Formula": "Timolol (5mg/ml) + Brimonidine (2mg/ml)",
-    "Category": "",
-    "Brand": "AbbVie Therapeutics India Private Limited"
+    "Category": "Glaucoma Medication",
+    "Brand": "AbbVie Therapeutics India Private Limited",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Compu 0.5% Eye Drop",
     "Formula": "Carboxymethylcellulose (0.5% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Cyclotears 0.5%",
     "Formula": "Ciclosporin (0.05% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Immunomodulator",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Increases tear production in chronic dry eye.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Not for use with contact lenses."
+    ]
   },
   {
     "Name": "Diflucor Eye Drops",
     "Formula": "Difluprednate (0.05% w/v)",
-    "Category": "",
-    "Brand": "Ajanta Pharma Ltd"
+    "Category": "Corticosteroid",
+    "Brand": "Ajanta Pharma Ltd",
+    "uses": "Treats inflammation and pain after eye surgery or injury.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Dorsenz Eye Drop",
     "Formula": "Dorzolamide (2% w/v)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Carbonic Anhydrase Inhibitor",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Dorsenz-T Eye Drop",
     "Formula": "Dorzolamide (2% w/v) + Timolol (0.5% w/v)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Dorvista eye drops",
     "Formula": "Dorzolamide (2% w/v)",
-    "Category": "",
-    "Brand": "Brand Not available"
+    "Category": "Carbonic Anhydrase Inhibitor",
+    "Brand": "Brand Not available",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Dorvista T eye drops",
     "Formula": "Dorzolamide (2% w/v) + Timolol (0.5% w/v)",
-    "Category": "",
-    "Brand": "Brand Not available"
+    "Category": "Glaucoma Medication",
+    "Brand": "Brand Not available",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Dorzox Eye Drop",
     "Formula": "Dorzolamide (2% w/v)",
-    "Category": "",
-    "Brand": "Cipla Ltd"
+    "Category": "Carbonic Anhydrase Inhibitor",
+    "Brand": "Cipla Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Dorzox T Eye Drop",
     "Formula": "Dorzolamide (2% w/v) + Timolol (0.5% w/v)",
-    "Category": "",
-    "Brand": "Cipla Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "Cipla Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Engatt 0.3%",
     "Formula": "Gatifloxacin (0.3% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Antibiotic",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Enmox Plus Eye Drop",
     "Formula": "Moxifloxacin (0.5% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Antibiotic",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "FLI",
     "Formula": "Fluorometholone (0.1% w/v)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Corticosteroid",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Treats inflammation and pain after eye surgery or injury.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Flur Eye Drop",
     "Formula": "Flurbiprofen (0.03% w/v) + Hydroxypropylmethylcellulose (0.25% w/v) + Phenyl Mercuric Nitrate (0.002% w/v)",
-    "Category": "",
-    "Brand": "Allergan India Pvt Ltd"
+    "Category": "NSAID/Lubricant",
+    "Brand": "Allergan India Pvt Ltd",
+    "uses": "Relieves pain and inflammation; lubricates the eye.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Flurisone 0.1% Eye Drop",
     "Formula": "Fluorometholone (0.1% w/v)",
-    "Category": "",
-    "Brand": "Micro Labs Ltd"
+    "Category": "Corticosteroid",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Treats inflammation and pain after eye surgery or injury.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "FML T Eye Drop",
     "Formula": "Tobramycin (0.3% w/v) + Fluorometholone (0.1% w/v)",
-    "Category": "",
-    "Brand": "Allergan India Pvt Ltd"
+    "Category": "Antibiotic/Corticosteroid",
+    "Brand": "Allergan India Pvt Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Fomira",
     "Formula": "Polyethylene Glycol (0.4% w/v) + Propylene Glycol (0.3% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Zivira Labs Pvt Ltd"
+    "Brand": "Zivira Labs Pvt Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "homacid",
     "Formula": "Homatropine (2% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Cycloplegic/Mydriatic",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Dilates the pupil for eye exams and treats certain eye conditions.",
+    "conditions": [
+      "May cause blurred vision and light sensitivity.",
+      "Not for use in patients with narrow-angle glaucoma."
+    ]
   },
   {
     "Name": "Hyla PF Eye Drop",
     "Formula": "Sodium Hyaluronate (0.1% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Hylorich 0.18% Eye Drop",
     "Formula": "Sodium Hyaluronate (0.18% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Apple Pharmaceuticals"
+    "Brand": "Apple Pharmaceuticals",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Hypersenz",
     "Formula": "Sodium Chloride 5 %",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Hypertonic Saline",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Reduces corneal swelling.",
+    "conditions": [
+      "May cause temporary burning or stinging."
+    ]
   },
   {
     "Name": "Ilevro",
     "Formula": "Nepafenac (0.3% w/v)",
-    "Category": "",
-    "Brand": "Novartis India Ltd"
+    "Category": "NSAID",
+    "Brand": "Novartis India Ltd",
+    "uses": "Relieves pain and inflammation after cataract surgery.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Lacryl Hydrate Eye Drop",
     "Formula": "Polyethylene Glycol (0.4% w/v) + Propylene Glycol (0.3% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Lacryl Ultra Eye Drop",
     "Formula": "Polyethylene Glycol (0.4% w/v) + Propylene Glycol (0.3% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Leos MX Eye Drop",
     "Formula": "Loteprednol etabonate (0.5% w/v) + Moxifloxacin (0.5% w/v)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Corticosteroid/Antibiotic",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Levoo 1.5% Eye Drop",
     "Formula": "Levofloxacin (1.5% w/v)",
-    "Category": "",
-    "Brand": "Sunways India Pvt Ltd"
+    "Category": "Antibiotic",
+    "Brand": "Sunways India Pvt Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Loc Tears Fusion Eye Drop",
     "Formula": "Carboxymethylcellulose (1% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Lopres 0.5% Eye Drop",
     "Formula": "Timolol (0.5% w/v)",
-    "Category": "",
-    "Brand": "Micro Labs Ltd"
+    "Category": "Beta-Blocker",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "Not for patients with asthma or COPD.",
+      "Use with caution in heart problems."
+    ]
   },
   {
     "Name": "Lotebra Eye Drop",
     "Formula": "Loteprednol etabonate (0.5% w/v) + Tobramycin (0.3% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Corticosteroid/Antibiotic",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Lotepred LS Eye Drop",
     "Formula": "Loteprednol etabonate (0.2% w/v)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "Corticosteroid",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Treats inflammation and pain after eye surgery or injury.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Lubimoist",
     "Formula": "Sodium Hyaluronate (0.18% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Mankind Pharma Ltd"
+    "Brand": "Mankind Pharma Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Lubi-Top Eye Drops",
-    "Formula": "Polyethylene Glycol (0.4% w/v) + Propylene Glycol (0.3% w/v)",
+    "Formula": "POLYETHYLENE GLYCOL-0.4%W/V + PROPYLENE GLYCOL-0.3%W/V",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Akums Drugs & Pharmaceuticals Ltd"
+    "Brand": "Akums Drugs & Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Lumigan 0.01%",
     "Formula": "Bimatoprost (0.01% w/v)",
-    "Category": "",
-    "Brand": "Allergan India Pvt Ltd"
+    "Category": "Prostaglandin Analog",
+    "Brand": "Allergan India Pvt Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause darkening of the eyelashes and iris.",
+      "Consult a doctor for any changes in vision."
+    ]
   },
   {
     "Name": "Megabrom Eye Drop",
     "Formula": "Bromfenac (0.09% w/v)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "NSAID",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Relieves pain and inflammation after cataract surgery.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Moistane Eye Drop",
     "Formula": "Polyethylene Glycol (0.4% w/v) + Propylene Glycol (0.3% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Micro Labs Ltd"
+    "Brand": "Micro Labs Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Motogram Eye Drop",
     "Formula": "Tobramycin (0.3% w/v) + Moxifloxacin (0.5% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Antibiotic",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Moxigram-DM Eye Drop",
     "Formula": "Moxifloxacin (5mg/ml) + Dexamethasone (1mg/ml)",
-    "Category": "",
-    "Brand": "Micro Labs Ltd"
+    "Category": "Antibiotic/Corticosteroid",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Moxigram LX Eye Drop",
     "Formula": "Loteprednol etabonate (0.5% w/v) + Moxifloxacin (0.5% w/v)",
-    "Category": "",
-    "Brand": "Micro Labs Ltd"
+    "Category": "Corticosteroid/Antibiotic",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Lupin's Mxg Eye Drop",
     "Formula": "Moxifloxacin (0.5% w/v)",
-    "Category": "",
-    "Brand": "Lupin Ltd"
+    "Category": "Antibiotic",
+    "Brand": "Lupin Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Myatro 0.01% Eye Drop",
     "Formula": "Atropine (0.01% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Cycloplegic/Mydriatic",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Dilates the pupil for eye exams and treats certain eye conditions.",
+    "conditions": [
+      "May cause blurred vision and light sensitivity.",
+      "Not for use in patients with narrow-angle glaucoma."
+    ]
   },
   {
     "Name": "Nepaquin Eye Drop",
     "Formula": "Nepafenac (1% w/v)",
-    "Category": "",
-    "Brand": "Eagle-Eye Healthcare Pvt Ltd"
+    "Category": "NSAID",
+    "Brand": "Eagle-Eye Healthcare Pvt Ltd",
+    "uses": "Relieves pain and inflammation after cataract surgery.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Nepalact OD Eye Drop Bkc Free",
     "Formula": "Nepafenac (0.3% w/v)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "NSAID",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Relieves pain and inflammation after cataract surgery.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Nepatop Eye Drop",
     "Formula": "Nepafenac (0.1% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "NSAID",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Relieves pain and inflammation after cataract surgery.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Nepavista",
     "Formula": "not in stock",
-    "Category": "",
-    "Brand": "Brand Not available"
+    "Category": "Not Available",
+    "Brand": "Brand Not available",
+    "uses": "Product not available",
+    "conditions": []
   },
   {
     "Name": "Nepawel Eye Drop",
     "Formula": "Nepafenac (0.1% w/v)",
-    "Category": "",
-    "Brand": "Zivira Labs Pvt Ltd"
+    "Category": "NSAID",
+    "Brand": "Zivira Labs Pvt Ltd",
+    "uses": "Relieves pain and inflammation after cataract surgery.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Nextane 0.1%",
     "Formula": "Sodium Hyaluronate (0.1% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Micro Labs Ltd"
+    "Brand": "Micro Labs Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Obrin Eye Drop",
     "Formula": "Tobramycin (0.3% w/v)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Antibiotic",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Obrin F Eye Drop",
-    "Formula": "Tobramycin (NA) + Fluorometholone (NA)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Formula": "Tobramycin (0.3% w/v) + Fluorometholone (0.1% w/v)",
+    "Category": "Antibiotic/Corticosteroid",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Okt Eye Drop",
     "Formula": "Ketorolac (0.4% w/v) + Olopatadine (0.1% w/v)",
-    "Category": "",
-    "Brand": "Micro Labs Ltd"
+    "Category": "NSAID/Antihistamine",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Relieves pain, inflammation, and itching.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Consult a doctor for NSAID allergies."
+    ]
   },
   {
     "Name": "Opticool Eye Drop",
     "Formula": "Camphor (0.01% w/v) + Menthol (0.005% w/v) + Naphazoline (0.05% w/v) + Phenylephrine (0.12% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Decongestant/Coolant",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Relieves redness and minor irritation.",
+    "conditions": [
+      "May cause rebound redness.",
+      "Use sparingly."
+    ]
   },
   {
     "Name": "Optive Eye Drop",
     "Formula": "Carboxymethylcellulose (0.5% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Allergan India Pvt Ltd"
+    "Brand": "Allergan India Pvt Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Paracaine Eye Drop",
     "Formula": "Proparacaine (NA)",
-    "Category": "",
-    "Brand": "Ajanta Pharma Ltd"
+    "Category": "Topical Anesthetic",
+    "Brand": "Ajanta Pharma Ltd",
+    "uses": "Anesthetizes the eye for procedures.",
+    "conditions": [
+      "For professional use only.",
+      "Not for long-term use."
+    ]
   },
   {
     "Name": "Pataday 0.2%",
     "Formula": "Olopatadine (0.2% w/v)",
-    "Category": "",
-    "Brand": "Novartis India Ltd"
+    "Category": "Antihistamine",
+    "Brand": "Novartis India Ltd",
+    "uses": "Relieves eye itching due to allergies.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Patvira 0.2% Eye Drop",
     "Formula": "Olopatadine (0.2% w/v)",
-    "Category": "",
-    "Brand": "Zivira Labs Pvt Ltd"
+    "Category": "Antihistamine",
+    "Brand": "Zivira Labs Pvt Ltd",
+    "uses": "Relieves eye itching due to allergies.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Peglub Eye Drop",
     "Formula": "Polyethylene Glycol (0.4% w/v) + Propylene Glycol (0.3% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Austrak Pvt Ltd"
+    "Brand": "Austrak Pvt Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Pilocar 2% Eye Drop",
     "Formula": "Pilocarpine (2% w/v)",
-    "Category": "",
-    "Brand": "FDC Ltd"
+    "Category": "Cholinergic",
+    "Brand": "FDC Ltd",
+    "uses": "Treats glaucoma by constricting the pupil and lowering eye pressure.",
+    "conditions": [
+      "May cause blurred vision and brow ache.",
+      "Not for use in certain types of glaucoma."
+    ]
   },
   {
     "Name": "predforte",
     "Formula": "Prednisolone (1% w/v)",
-    "Category": "",
-    "Brand": "Allergan India Pvt Ltd"
+    "Category": "Corticosteroid",
+    "Brand": "Allergan India Pvt Ltd",
+    "uses": "Treats inflammation and pain after eye surgery or injury.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Pred Plus Eye Drop",
     "Formula": "Prednisolone (10mg/ml)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Corticosteroid",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Treats inflammation and pain after eye surgery or injury.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Raiki 0.02% Eye Drop",
     "Formula": "Netarsudil (0.02% w/v)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "Rho Kinase Inhibitor",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses":   "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause redness and small hemorrhages in the eye.",
+      "Consult a doctor for any changes in vision."
+    ]
   },
   {
     "Name": "Refresh Tears Eye Drop",
     "Formula": "Carboxymethylcellulose (0.5% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "AbbVie Therapeutics India Private Limited"
+    "Brand": "AbbVie Therapeutics India Private Limited",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Refresh Liquigel Eye Drop",
     "Formula": "Carboxymethylcellulose (1% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "AbbVie Therapeutics India Private Limited"
+    "Brand": "AbbVie Therapeutics India Private Limited",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Restasis 0.05%",
     "Formula": "Ciclosporin (0.05% w/v)",
-    "Category": "",
-    "Brand": "Allergan India Pvt Ltd"
+    "Category": "Immunomodulator",
+    "Brand": "Allergan India Pvt Ltd",
+    "uses": "Increases tear production in chronic dry eye.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Not for use with contact lenses."
+    ]
   },
   {
     "Name": "Ripatec Eye Drop",
     "Formula": "Ripasudil (0.4% w/v)",
-    "Category": "",
-    "Brand": "Ajanta Pharma Ltd"
+    "Category": "Rho Kinase Inhibitor",
+    "Brand": "Ajanta Pharma Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause redness and small hemorrhages in the eye.",
+      "Consult a doctor for any changes in vision."
+    ]
   },
   {
     "Name": "Sensiclo 1%",
     "Formula": "Cyclopentolate (1% w/v)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Cycloplegic/Mydriatic",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Dilates the pupil for eye exams and treats certain eye conditions.",
+    "conditions": [
+      "May cause blurred vision and light sensitivity.",
+      "Not for use in patients with narrow-angle glaucoma."
+    ]
   },
   {
     "Name": "Sensieyes Plus Eye Drop",
     "Formula": "Polyethylene Glycol (Eye Drop) (0.4% w/v) + Propylene Glycol (0.3% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Lupin Ltd"
+    "Brand": "Lupin Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Senzmox Eye Drop",
     "Formula": "Moxifloxacin (0.5% w/v)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Antibiotic",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Senzmox DM Eye Drop",
     "Formula": "Moxifloxacin (0.1% w/v) + Dexamethasone (0.5% w/v)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Antibiotic/Corticosteroid",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Simbrinza",
     "Formula": "Brinzolamide (1% w/v) + Brimonidine (0.2% w/v)",
-    "Category": "",
-    "Brand": "Alcon Laboratories"
+    "Category": "Glaucoma Medication",
+    "Brand": "Alcon Laboratories",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Soha Liquigel",
     "Formula": "Sodium Hyaluronate (0.18% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Synca LS",
     "Formula": "Brinzolamide (1% w/v) + Brimonidine (0.1% w/v)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Systane Ultra",
     "Formula": "Polyethylene Glycol (0.4% w/v) + Propylene Glycol (0.3% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Alcon Laboratories"
+    "Brand": "Alcon Laboratories",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "T plus",
     "Formula": "Phenylephrine 5 %+Tropicamide 0.8 %",
-    "Category": "",
-    "Brand": "Sapient Laboratories Pvt Ltd"
+    "Category": "Mydriatic/Cycloplegic",
+    "Brand": "Sapient Laboratories Pvt Ltd",
+    "uses": "Dilates the pupil for eye exams.",
+    "conditions": [
+      "May cause blurred vision and light sensitivity.",
+      "Use with caution in patients with narrow-angle glaucoma."
+    ]
   },
   {
     "Name": "Theo Tears D Eye Drop",
     "Formula": "Sodium Hyaluronate (0.18% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Timolet OD BKC free Eye Drop",
     "Formula": "Timolol (0.5% w/v)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "Beta-Blocker",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "Not for patients with asthma or COPD.",
+      "Use with caution in heart problems."
+    ]
   },
   {
     "Name": "Tizta Eye Drop",
     "Formula": "Sodium Hyaluronate (0.1% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Zivira Labs Pvt Ltd"
+    "Brand": "Zivira Labs Pvt Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Tobracid 0.3% Eye Drop",
     "Formula": "Tobramycin (0.3% w/v)",
-    "Category": "",
-    "Brand": "Zivira Labs Pvt Ltd"
+    "Category": "Antibiotic",
+    "Brand": "Zivira Labs Pvt Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
+  },
+    {
+    "Name": "Another Tobramycin",
+    "Formula": "Tobramycin (0.3% w/v)",
+    "Category": "Antibiotic",
+    "Brand": "Generic Brand",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Tobracid F Eye Drop",
     "Formula": "Tobramycin (0.3% w/v) + Fluorometholone (0.1% w/v)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Antibiotic/Corticosteroid",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Tobrawin LP Eye Drop",
     "Formula": "Loteprednol etabonate (0.5% w/v) + Tobramycin (0.3% w/v)",
-    "Category": "",
-    "Brand": "Zivira Labs Pvt Ltd"
+    "Category": "Corticosteroid/Antibiotic",
+    "Brand": "Zivira Labs Pvt Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Travantan",
     "Formula": "Travoprost (0.004% w/v)",
-    "Category": "",
-    "Brand": "Alcon Laboratories"
+    "Category": "Prostaglandin Analog",
+    "Brand": "Alcon Laboratories",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause darkening of the eyelashes and iris.",
+      "Consult a doctor for any changes in vision."
+    ]
   },
   {
     "Name": "Trehalube Sodium Hyaluronate Eye Drop",
-    "Formula": "Sodium Hyaluronate (NA)",
+    "Formula": "Sodium Hyaluronate (0.1% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Micro Labs Ltd"
+    "Brand": "Micro Labs Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Trisopt",
     "Formula": "Brinzolamide (10mg) + Brimonidine (2.0mg) + Timolol (5.0mg)",
-    "Category": "",
-    "Brand": "Micro Labs Ltd"
+    "Category": "Glaucoma Medication",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Lowers eye pressure in glaucoma or ocular hypertension.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Tropicacyl Eye Drop",
     "Formula": "Tropicamide (1% w/v)",
-    "Category": "",
-    "Brand": "Sunways India Pvt Ltd"
+    "Category": "Cycloplegic/Mydriatic",
+    "Brand": "Sunways India Pvt Ltd",
+    "uses": "Dilates the pupil for eye exams and treats certain eye conditions.",
+    "conditions": [
+      "May cause blurred vision and light sensitivity.",
+      "Not for use in patients with narrow-angle glaucoma."
+    ]
   },
   {
     "Name": "Vigadexa",
     "Formula": "Moxifloxacin (0.5% w/v) + Dexamethasone (0.1% w/v)",
-    "Category": "",
-    "Brand": "Novartis India Ltd"
+    "Category": "Antibiotic/Corticosteroid",
+    "Brand": "Novartis India Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Vigamox 0.5%",
     "Formula": "Moxifloxacin (0.5% w/v)",
-    "Category": "",
-    "Brand": "Alcon Laboratories"
+    "Category": "Antibiotic",
+    "Brand": "Alcon Laboratories",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Winolap Max Eye Drop",
     "Formula": "Olopatadine (7mg/ml)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "Antihistamine",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Relieves eye itching due to allergies.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Winolap DS Eye Drop",
     "Formula": "Olopatadine (0.2% w/v)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "Antihistamine",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Relieves eye itching due to allergies.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
+  },
+    {
+    "Name": "Another Olopatadine",
+    "Formula": "Olopatadine (0.2% w/v)",
+    "Category": "Antihistamine",
+    "Brand": "Generic Brand",
+    "uses": "Relieves eye itching due to allergies.",
+    "conditions": [
+      "May cause blurred vision.",
+      "Burning or stinging sensation."
+    ]
   },
   {
     "Name": "Xlha Eye Drop",
     "Formula": "Sodium Hyaluronate (0.1% w/v)",
     "Category": "Lubricant/Tear Supplement",
-    "Brand": "Sunways India Pvt Ltd"
+    "Brand": "Sunways India Pvt Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": []
   },
   {
     "Name": "Senzmox Eye Ointment",
     "Formula": "Moxifloxacin (0.5% w/w)",
-    "Category": "Anti-biotic Ointment",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Antibiotic Ointment",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause blurred vision or mild irritation.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Moxigram",
     "Formula": "Moxifloxacin (0.5% w/w)",
-    "Category": "Anti-biotic Ointment",
-    "Brand": "Micro Labs Ltd"
+    "Category": "Antibiotic Ointment",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause blurred vision or mild irritation.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Ducira gel",
     "Formula": "Hydroxypropylmethylcellulose (0.3% w/w) + sodium Perborate Monohydrate (0.028% w/w)",
-    "Category": "",
-    "Brand": "Zivira Labs Pvt Ltd"
+    "Category": "Lubricant/Cleansing Agent",
+    "Brand": "Zivira Labs Pvt Ltd",
+    "uses": "Lubricates the eye and may help cleanse debris.",
+    "conditions": [
+      "May cause temporary blurred vision.",
+      "Discontinue use if irritation persists."
+    ]
   },
   {
     "Name": "Etra lube",
     "Formula": "Hydroxypropylmethylcellulose (0.3% w/w) + sodium Perborate Monohydrate (0.028% w/w)",
-    "Category": "",
-    "Brand": "Micro Labs Ltd"
+    "Category": "Lubricant/Cleansing Agent",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Lubricates the eye and may help cleanse debris.",
+    "conditions": [
+      "May cause temporary blurred vision.",
+      "Discontinue use if irritation persists."
+    ]
   },
   {
     "Name": "Eyemist Gel",
     "Formula": "Hydroxypropylmethylcellulose (0.3% w/w) + sodium Perborate Monohydrate (0.028% w/w)",
-    "Category": "",
-    "Brand": "Sun Pharmaceutical Industries Ltd"
+    "Category": "Lubricant/Cleansing Agent",
+    "Brand": "Sun Pharmaceutical Industries Ltd",
+    "uses": "Lubricates the eye and may help cleanse debris.",
+    "conditions": [
+      "May cause temporary blurred vision.",
+      "Discontinue use if irritation persists."
+    ]
   },
   {
     "Name": "Lacryl pf",
     "Formula": "Hydroxypropylmethylcellulose (2% w/w)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Lubricant/Tear Supplement",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": [
+      "May cause temporary blurred vision.",
+      "Can be used as a night time lubricant.",
+       "can be used every night or as needed"
+    ]
   },
   {
     "Name": "Hypersenz Eye Ointment",
     "Formula": "Sodium Chloride (6% w/w)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Hypertonic Saline Ointment",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Reduces corneal swelling.",
+    "conditions": [
+      "May cause temporary burning or stinging.",
+      "Use as directed by your doctor."
+    ]
   },
   {
     "Name": "Hypersol 6 Eye Ointment",
     "Formula": "Sodium Chloride (6% w/w)",
-    "Category": "",
-    "Brand": "Jawa Pharmaceuticals Pvt Ltd"
+    "Category": "Hypertonic Saline Ointment",
+    "Brand": "Jawa Pharmaceuticals Pvt Ltd",
+    "uses": "Reduces corneal swelling.",
+    "conditions": [
+      "May cause temporary burning or stinging.",
+      "Use as directed by your doctor."
+    ]
   },
   {
     "Name": "Aquim 0.18% Eye Gel",
     "Formula": "Hyaluronic Acid (0.18% w/v)",
-    "Category": "",
-    "Brand": "His Eyeness Ophthalmics Pvt Ltd"
+    "Category": "Lubricant/Tear Supplement",
+    "Brand": "His Eyeness Ophthalmics Pvt Ltd",
+    "uses": "Relieves dry eyes.",
+    "conditions": [
+      "May cause temporary blurred vision."
+    ]
   },
   {
     "Name": "Gancigel Ophthalmic Gel",
     "Formula": "Ganciclovir (1.5mg)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Antiviral",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Treats viral infections of the cornea (herpetic keratitis).",
+    "conditions": [
+      "May cause blurred vision or mild irritation.",
+      "Use as directed by your doctor."
+    ]
   },
   {
     "Name": "Lotel Eye Ointment",
     "Formula": "Loteprednol etabonate (5mg)",
-    "Category": "",
-    "Brand": "Ajanta Pharma Ltd"
+    "Category": "Corticosteroid Ointment",
+    "Brand": "Ajanta Pharma Ltd",
+    "uses": "Treats inflammation and pain after eye surgery or injury.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Entrak Soothe Eye Ointment",
     "Formula": "Tacrolimus (0.03% w/w)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd"
+    "Category": "Immunomodulator Ointment",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Treats severe dry eye disease.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Not for use with contact lenses.",
+      "Consult with eye doctor before use"
+    ]
   },
   {
     "Name": "Talimus Ointment",
     "Formula": "Tacrolimus (0.03% w/w)",
-    "Category": "",
-    "Brand": "Ajanta Pharma Ltd"
+    "Category": "Immunomodulator Ointment",
+    "Brand": "Ajanta Pharma Ltd",
+    "uses": "Treats severe dry eye disease.",
+    "conditions": [
+      "May cause burning or stinging.",
+      "Not for use with contact lenses."
+    ]
   },
   {
     "Name": "Obrin eye Ointment",
     "Formula": "Tobramycin (0.3% w/w)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Antibiotic Ointment",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause blurred vision or mild irritation.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Senzclor H Eye Ointment",
     "Formula": "Chloramphenicol (1% w/w) + Hydrocortisone (0.5% w/w)",
-    "Category": "",
-    "Brand": "Senses Pharmaceuticals Ltd"
+    "Category": "Antibiotic/Corticosteroid Ointment",
+    "Brand": "Senses Pharmaceuticals Ltd",
+    "uses": "Treats bacterial infections with inflammation.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Flrisone eye ointment",
     "Formula": "Fluorometholone (0.1% w/w)",
-    "Category": "",
-    "Brand": "Micro Labs Ltd"
+    "Category": "Corticosteroid Ointment",
+    "Brand": "Micro Labs Ltd",
+    "uses": "Treats inflammation and pain after eye surgery or injury.",
+    "conditions": [
+      "May increase eye pressure.",
+      "Not for long-term use without medical supervision."
+    ]
   },
   {
     "Name": "Atropine sulphate eye ointment",
     "Formula": "Atropine (1% w/w)",
-    "Category": "",
-    "Brand": "Jawa Pharmaceuticals Pvt Ltd"
+    "Category": "Cycloplegic/Mydriatic Ointment",
+    "Brand": "Jawa Pharmaceuticals Pvt Ltd",
+    "uses": "Dilates the pupil for eye exams and treats certain eye conditions.",
+    "conditions": [
+      "May cause blurred vision and light sensitivity.",
+      "Not for use in patients with narrow-angle glaucoma."
+    ]
   },
   {
-   "Name": "Optithrocin eye ointment",
+    "Name": "Optithrocin eye ointment",
     "Formula": "Azithromycin (1% w/w)",
-    "Category": "",
-    "Brand": "Entod Pharmaceuticals Ltd" 
+    "Category": "Antibiotic Ointment",
+    "Brand": "Entod Pharmaceuticals Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause blurred vision or mild irritation.",
+      "Consult a doctor if symptoms worsen."
+    ]
   },
   {
     "Name": "Zaha Eye Ointment",
     "Formula": "Azithromycin (1% w/w)",
-    "Category": "",
-    "Brand": "Ajanta Pharma Ltd"
+    "Category": "Antibiotic Ointment",
+    "Brand": "Ajanta Pharma Ltd",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause blurred vision or mild irritation.",
+      "Consult a doctor if symptoms worsen."
+    ]
   }
 ]
