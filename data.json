@@ -652,5 +652,23 @@
     "Formula": "Moxifloxacin (0.5% w/w)",
     "Category": "Anti-biotic Ointment",
     "Brand": "Micro Labs Ltd"
+  },
+  {
+    "Name": "Ducira gel",
+    "Formula": "Hydroxypropylmethylcellulose (0.3% w/w) + sodium Perborate Monohydrate (0.028% w/w)",
+    "Category": "",
+    "Brand": "Zivira Labs Pvt Ltd"
+  },
+  {
+    "Name": "Etra lube",
+    "Formula": "Hydroxypropylmethylcellulose (0.3% w/w) + sodium Perborate Monohydrate (0.028% w/w)",
+    "Category": "",
+    "Brand": "Micro Labs Ltd"
+  },
+  {
+    "Name": "Eyemist Gel",
+    "Formula": "Hydroxypropylmethylcellulose (0.3% w/w) + sodium Perborate Monohydrate (0.028% w/w)",
+    "Category": "",
+    "Brand": "Sun Pharmaceutical Industries Ltd"
   }
 ]
