@@ -1,173 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eye Drop Information Search</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Drop Information Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Style to fix the search bar at the top */
+        .fixed-search-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f3f4f6; /* bg-gray-100 from tailwind */
+            padding: 0.5rem; /* p-2 from tailwind */
+            z-index: 100; /* Ensure it stays on top of other content */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+        }
+
+        /* Add some top padding to the body to prevent content overlap */
+        body {
+            padding-top: 60px; /* Adjust based on search bar height + padding */
+        }
+
+        .alternative-link {
+            cursor: pointer;
+            color: blue; /* Or any color you prefer */
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans">
-  <div class="container mx-auto p-4">
-    <h1 class="text-3xl font-bold text-center mb-6">Eye Drop Information Search</h1>
-    
-    <div class="mb-4 relative">
-      <input 
-        type="text" 
-        id="searchInput" 
-        placeholder="Search by Name, Brand, Category, or Formula..." 
-        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
-      <div 
-        id="suggestions" 
-        class="absolute w-full bg-white border border-gray-300 rounded-md mt-1 shadow-md max-h-48 overflow-y-auto z-10 hidden"
-      ></div>
+    <!-- Fixed Search Bar -->
+    <div class="fixed-search-bar">
+        <div class="container mx-auto relative">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by Name, Brand, Category, or Formula..."
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+            <div
+                id="suggestions"
+                class="absolute w-full bg-white border border-gray-300 rounded-md mt-1 shadow-md max-h-48 overflow-y-auto z-10 hidden"
+            ></div>
+        </div>
     </div>
 
-    <table class="w-full bg-white shadow-md rounded-lg overflow-hidden mb-6">
-      <thead class="bg-blue-600 text-white">
-        <tr>
-          <th class="p-3 text-left">Name</th>
-          <th class="p-3 text-left">Formula</th>
-          <th class="p-3 text-left">Category</th>
-          <th class="p-3 text-left">Brand</th>
-        </tr>
-      </thead>
-      <tbody id="tableBody"></tbody>
-    </table>
+    <!-- Main Content -->
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-6">Eye Drop Information Search</h1>
 
-    <div id="alternativesSection" class="bg-white p-4 shadow-md rounded-lg hidden">
-      <h2 class="text-xl font-semibold mb-3">Alternative Products (Same Formula)</h2>
-      <ul id="alternativesList" class="list-disc list-inside text-gray-700"></ul>
+        <table class="w-full bg-white shadow-md rounded-lg overflow-hidden mb-6">
+            <thead class="bg-blue-600 text-white">
+            <tr>
+                <th class="p-3 text-left">Name</th>
+                <th class="p-3 text-left">Formula</th>
+                <th class="p-3 text-left">Category</th>
+                <th class="p-3 text-left">Brand</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+        <div id="alternativesSection" class="bg-white p-4 shadow-md rounded-lg hidden">
+            <h2 class="text-xl font-semibold mb-3">Alternative Products (Same Formula)</h2>
+            <ul id="alternativesList" class="list-disc list-inside text-gray-700"></ul>
+        </div>
     </div>
-  </div>
 
-  <script>
-    async function loadData() {
-      try {
-        const response = await fetch('./data.json');
-        if (!response.ok) throw new Error('Failed to load data.json');
-        return await response.json();
-      } catch (error) {
-        console.error('Error loading data:', error);
-        document.getElementById('tableBody').innerHTML = `
-          <tr><td colspan="4" class="p-3 text-center text-red-500">
-            Error loading data. Please ensure data.json is available.
-          </td></tr>
-        `;
-        return [];
-      }
-    }
-
-    function renderTable(data) {
-      const tableBody = document.getElementById('tableBody');
-      tableBody.innerHTML = '';
-      if (data.length === 0) {
-        tableBody.innerHTML = `
-          <tr><td colspan="4" class="p-3 text-center">No results found.</td></tr>
-        `;
-        document.getElementById('alternativesSection').classList.add('hidden');
-        return;
-      }
-      data.forEach(item => {
-        const row = document.createElement('tr');
-        row.className = 'border-b hover:bg-gray-50';
-        row.innerHTML = `
-          <td class="p-3">${item.Name || 'N/A'}</td>
-          <td class="p-3">${item.Formula || 'N/A'}</td>
-          <td class="p-3">${item.Category || 'N/A'}</td>
-          <td class="p-3">${item.Brand || 'N/A'}</td>
-        `;
-        tableBody.appendChild(row);
-      });
-
-      // Check for alternatives if only one match
-      if (data.length === 1) {
-        const mainFormula = data[0].Formula;
-        const mainName = data[0].Name;
-        showAlternatives(mainFormula, mainName);
-      } else {
-        document.getElementById('alternativesSection').classList.add('hidden');
-      }
-    }
-
-    function showAlternatives(formula, excludeName) {
-      const list = document.getElementById('alternativesList');
-      const section = document.getElementById('alternativesSection');
-      const altData = globalData.filter(item => 
-        item.Formula === formula && item.Name !== excludeName
-      );
-
-      if (altData.length === 0) {
-        section.classList.add('hidden');
-        return;
-      }
-
-      list.innerHTML = '';
-      altData.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = `${item.Name} — ${item.Brand}`;
-        list.appendChild(li);
-      });
-      section.classList.remove('hidden');
-    }
-
-    function filterData(data, query) {
-      query = query.toLowerCase().trim();
-      if (!query) return data;
-      return data.filter(item => 
-        (item.Name || '').toLowerCase().includes(query) ||
-        (item.Formula || '').toLowerCase().includes(query) ||
-        (item.Category || '').toLowerCase().includes(query) ||
-        (item.Brand || '').toLowerCase().includes(query)
-      );
-    }
-
-    let globalData = [];
-
-    async function init() {
-      globalData = await loadData();
-      renderTable(globalData);
-
-      const searchInput = document.getElementById('searchInput');
-      const suggestionsBox = document.getElementById('suggestions');
-
-      searchInput.addEventListener('input', () => {
-        const query = searchInput.value.trim().toLowerCase();
-        const filteredData = filterData(globalData, query);
-        renderTable(filteredData);
-
-        const suggestions = globalData
-          .filter(item => item.Name.toLowerCase().includes(query))
-          .slice(0, 5)
-          .map(item => item.Name);
-
-        if (query && suggestions.length > 0) {
-          suggestionsBox.innerHTML = suggestions
-            .map(name => `<div class="p-2 hover:bg-blue-100 cursor-pointer">${name}</div>`)
-            .join('');
-          suggestionsBox.classList.remove('hidden');
-        } else {
-          suggestionsBox.classList.add('hidden');
+    <script>
+        async function loadData() {
+            try {
+                const response = await fetch('./data.json');
+                if (!response.ok) throw new Error('Failed to load data.json');
+                return await response.json();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('tableBody').innerHTML = `
+                    <tr><td colspan="4" class="p-3 text-center text-red-500">
+                        Error loading data. Please ensure data.json is available.
+                    </td></tr>
+                `;
+                return [];
+            }
         }
 
-        suggestionsBox.querySelectorAll('div').forEach(div => {
-          div.addEventListener('click', () => {
-            searchInput.value = div.textContent;
-            const newFiltered = filterData(globalData, div.textContent);
-            renderTable(newFiltered);
-            suggestionsBox.classList.add('hidden');
-          });
-        });
-      });
+        function renderTable(data, alternativeName = null) {
+            const tableBody = document.getElementById('tableBody');
+            tableBody.innerHTML = '';
 
-      document.addEventListener('click', (e) => {
-        if (!searchInput.contains(e.target) && !suggestionsBox.contains(e.target)) {
-          suggestionsBox.classList.add('hidden');
+            if (data.length === 0) {
+                tableBody.innerHTML = `
+                    <tr><td colspan="4" class="p-3 text-center">No results found.</td></tr>
+                `;
+                document.getElementById('alternativesSection').classList.add('hidden');
+                return;
+            }
+
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                row.className = 'border-b hover:bg-gray-50 cursor-pointer main-row';
+                row.innerHTML = `
+                    <td class="p-3">${item.Name || 'N/A'}</td>
+                    <td class="p-3">${item.Formula || 'N/A'}</td>
+                    <td class="p-3">${item.Category || 'N/A'}</td>
+                    <td class="p-3">${item.Brand || 'N/A'}</td>
+                `;
+
+                row.addEventListener('click', () => toggleExpandedRow(item, row));
+
+                tableBody.appendChild(row);
+
+                // If an alternative name is provided, expand only that row and scroll to it
+                if (alternativeName && item.Name === alternativeName) {
+                    toggleExpandedRow(item, row);
+                    // Use a small delay to ensure the expanded row is fully rendered before scrolling
+                    setTimeout(() => {
+                        row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100); // 100ms delay
+                }
+            });
+
+            // Check for alternatives if only one match (original logic - may not be needed with expandable rows)
+            if (data.length === 1) {
+                const mainFormula = data[0].Formula;
+                const mainName = data[0].Name;
+                showAlternatives(mainFormula, mainName);
+            } else {
+                document.getElementById('alternativesSection').classList.add('hidden');
+            }
         }
-      });
-    }
 
-    document.addEventListener('DOMContentLoaded', init);
-  </script>
+        function toggleExpandedRow(item, row) {
+            const existingExpandedRow = row.nextElementSibling;
+
+            if (existingExpandedRow && existingExpandedRow.classList.contains('expanded-row')) {
+                // Collapse the row if it's already expanded
+                existingExpandedRow.remove();
+                return;
+            }
+
+            // Remove any other expanded rows
+            document.querySelectorAll('.expanded-row').forEach(expandedRow => {
+                expandedRow.remove();
+            });
+
+            // Find alternative drugs with the same formula but different name
+            const alternativeDrugs = globalData.filter(alt =>
+                alt.Formula.toLowerCase() === item.Formula.toLowerCase() && alt.Name.toLowerCase() !== item.Name.toLowerCase()
+            );
+
+            // Create and insert the expanded row
+            const expandedRow = document.createElement('tr');
+            expandedRow.className = 'expanded-row';
+            expandedRow.innerHTML = `
+                <td colspan="4" class="p-4">
+                    <div class="flex">
+                        <div class="w-1/2 pr-4">
+                            <h3 class="font-semibold">Uses:</h3>
+                            <p class="mb-2">${item.uses || 'No information available.'}</p>
+                            ${item.conditions && item.conditions.length > 0 ? `
+                                <h3 class="font-semibold">Special Conditions:</h3>
+                                <ul class="list-disc list-inside">
+                                    ${item.conditions.map(condition => `<li class="text-red-500">${condition}</li>`).join('')}
+                                </ul>
+                            ` : ''}
+                        </div>
+                        <div class="w-1/2 pl-4 border-l border-gray-300">
+                            <h3 class="font-semibold">Alternative Drugs (Same Formula):</h3>
+                            ${alternativeDrugs.length > 0 ? `
+                                <ul class="list-disc list-inside">
+                                    ${alternativeDrugs.map(alt => `<li><span class="alternative-link" data-name="${alt.Name}">${alt.Name} - ${alt.Brand}</span></li>`).join('')}
+                                </ul>
+                            ` : `<p>No alternative drugs found with the same formula.</p>`}
+                        </div>
+                    </div>
+                </td>
+            `;
+            row.parentNode.insertBefore(expandedRow, row.nextSibling);
+
+            // Add click event listeners to the alternative links
+            const alternativeLinks = expandedRow.querySelectorAll('.alternative-link');
+            alternativeLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    const alternativeName = link.dataset.name;
+                    // Instead of filtering the data, just re-render the table, expanding the selected alternative
+                    renderTable(globalData, alternativeName);
+                });
+            });
+        }
+
+        function showAlternatives(formula, excludeName) {
+            const list = document.getElementById('alternativesList');
+            const section = document.getElementById('alternativesSection');
+            const altData = globalData.filter(item =>
+                item.Formula.toLowerCase() === formula.toLowerCase() && item.Name.toLowerCase() !== excludeName.toLowerCase()
+            );
+
+            if (altData.length === 0) {
+                section.classList.add('hidden');
+                return;
+            }
+
+            list.innerHTML = '';
+            altData.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.Name} — ${item.Brand}`;
+                list.appendChild(li);
+            });
+            section.classList.remove('hidden');
+        }
+
+        function filterData(data, query) {
+            query = query.toLowerCase().trim();
+            if (!query) return data;
+            return data.filter(item =>
+                (item.Name || '').toLowerCase().includes(query) ||
+                (item.Formula || '').toLowerCase().includes(query) ||
+                (item.Category || '').toLowerCase().includes(query) ||
+                (item.Brand || '').toLowerCase().includes(query)
+            );
+        }
+
+        let globalData = [];
+
+        async function init() {
+            globalData = await loadData();
+            renderTable(filterData(globalData, document.getElementById('searchInput').value));
+
+            const searchInput = document.getElementById('searchInput');
+            const suggestionsBox = document.getElementById('suggestions');
+
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.trim().toLowerCase();
+                const filteredData = filterData(globalData, query);
+                renderTable(filteredData);
+            });
+
+            suggestionsBox.querySelectorAll('div').forEach(div => {
+                div.addEventListener('click', () => {
+                    searchInput.value = div.textContent;
+                    const newFiltered = filterData(globalData, div.textContent);
+                    renderTable(newFiltered);
+                    suggestionsBox.classList.add('hidden');
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!searchInput.contains(e.target) && !suggestionsBox.contains(e.target)) {
+                    suggestionsBox.classList.add('hidden');
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
 </body>
 </html>
