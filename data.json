@@ -670,5 +670,95 @@
     "Formula": "Hydroxypropylmethylcellulose (0.3% w/w) + sodium Perborate Monohydrate (0.028% w/w)",
     "Category": "",
     "Brand": "Sun Pharmaceutical Industries Ltd"
+  },
+  {
+    "Name": "Lacryl pf",
+    "Formula": "Hydroxypropylmethylcellulose (2% w/w)",
+    "Category": "",
+    "Brand": "Entod Pharmaceuticals Ltd"
+  },
+  {
+    "Name": "Hypersenz Eye Ointment",
+    "Formula": "Sodium Chloride (6% w/w)",
+    "Category": "",
+    "Brand": "Senses Pharmaceuticals Ltd"
+  },
+  {
+    "Name": "Hypersol 6 Eye Ointment",
+    "Formula": "Sodium Chloride (6% w/w)",
+    "Category": "",
+    "Brand": "Jawa Pharmaceuticals Pvt Ltd"
+  },
+  {
+    "Name": "Aquim 0.18% Eye Gel",
+    "Formula": "Hyaluronic Acid (0.18% w/v)",
+    "Category": "",
+    "Brand": "His Eyeness Ophthalmics Pvt Ltd"
+  },
+  {
+    "Name": "Optithrocin Eye Ointment",
+    "Formula": "Azithromycin (1% w/w)",
+    "Category": "",
+    "Brand": "Entod Pharmaceuticals Ltd"
+  },
+  {
+    "Name": "Gancigel Ophthalmic Gel",
+    "Formula": "Ganciclovir (1.5mg)",
+    "Category": "",
+    "Brand": "Entod Pharmaceuticals Ltd"
+  },
+  {
+    "Name": "Lotel Eye Ointment",
+    "Formula": "Loteprednol etabonate (5mg)",
+    "Category": "",
+    "Brand": "Ajanta Pharma Ltd"
+  },
+  {
+    "Name": "Entrak Soothe Eye Ointment",
+    "Formula": "Tacrolimus (0.03% w/w)",
+    "Category": "",
+    "Brand": "Entod Pharmaceuticals Ltd"
+  },
+  {
+    "Name": "Talimus Ointment",
+    "Formula": "Tacrolimus (0.03% w/w)",
+    "Category": "",
+    "Brand": "Ajanta Pharma Ltd"
+  },
+  {
+    "Name": "Obrin eye Ointment",
+    "Formula": "Tobramycin (0.3% w/w)",
+    "Category": "",
+    "Brand": "Senses Pharmaceuticals Ltd"
+  },
+  {
+    "Name": "Senzclor H Eye Ointment",
+    "Formula": "Chloramphenicol (1% w/w) + Hydrocortisone (0.5% w/w)",
+    "Category": "",
+    "Brand": "Senses Pharmaceuticals Ltd"
+  },
+  {
+    "Name": "Flrisone eye ointment",
+    "Formula": "Fluorometholone (0.1% w/w)",
+    "Category": "",
+    "Brand": "Micro Labs Ltd"
+  },
+  {
+    "Name": "Atropine sulphate eye ointment",
+    "Formula": "Atropine (1% w/w)",
+    "Category": "",
+    "Brand": "Jawa Pharmaceuticals Pvt Ltd"
+  },
+  {
+   "Name": "Optithrocin eye ointment",
+    "Formula": "Atropine (1% w/w)",
+    "Category": "",
+    "Brand": "Entod Pharmaceuticals Ltd" 
+  },
+  {
+    "Name": "Zaha Eye Ointment",
+    "Formula": "Atropine (1% w/w)",
+    "Category": "",
+    "Brand": "Ajanta Pharma Ltd"
   }
 ]
