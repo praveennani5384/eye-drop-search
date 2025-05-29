@@ -28,6 +28,11 @@
             color: blue; /* Or any color you prefer */
             text-decoration: underline;
         }
+
+        /* Style for the filter dropdowns */
+        .filter-dropdown {
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -50,6 +55,22 @@
     <!-- Main Content -->
     <div class="container mx-auto p-4">
         <h1 class="text-3xl font-bold text-center mb-6">Eye Drop Information Search</h1>
+
+        <!-- Filters -->
+        <div class="flex justify-start space-x-4 filter-dropdown">
+            <div>
+                <label for="categoryFilter" class="block text-sm font-medium text-gray-700">Category:</label>
+                <select id="categoryFilter" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <div>
+                <label for="brandFilter" class="block text-sm font-medium text-gray-700">Brand:</label>
+                <select id="brandFilter" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    <option value="">All Brands</option>
+                </select>
+            </div>
+        </div>
 
         <table class="w-full bg-white shadow-md rounded-lg overflow-hidden mb-6">
             <thead class="bg-blue-600 text-white">
@@ -146,9 +167,9 @@
                 expandedRow.remove();
             });
 
-            // Find alternative drugs with the same formula but different name
+            // Find alternative drugs with the SAME formula but different name
             const alternativeDrugs = globalData.filter(alt =>
-                alt.Formula.toLowerCase() === item.Formula.toLowerCase() && alt.Name.toLowerCase() !== item.Name.toLowerCase()
+                alt.Formula === item.Formula && alt.Name.toLowerCase() !== item.Name.toLowerCase()
             );
 
             // Create and insert the expanded row
@@ -195,7 +216,7 @@
             const list = document.getElementById('alternativesList');
             const section = document.getElementById('alternativesSection');
             const altData = globalData.filter(item =>
-                item.Formula.toLowerCase() === formula.toLowerCase() && item.Name.toLowerCase() !== excludeName.toLowerCase()
+                item.Formula === formula && item.Name.toLowerCase() !== excludeName.toLowerCase()
             );
 
             if (altData.length === 0) {
@@ -212,37 +233,111 @@
             section.classList.remove('hidden');
         }
 
-        function filterData(data, query) {
+        function filterData(data, query, categoryFilter = '', brandFilter = '') {
             query = query.toLowerCase().trim();
-            if (!query) return data;
-            return data.filter(item =>
-                (item.Name || '').toLowerCase().includes(query) ||
-                (item.Formula || '').toLowerCase().includes(query) ||
-                (item.Category || '').toLowerCase().includes(query) ||
-                (item.Brand || '').toLowerCase().includes(query)
-            );
+            let filteredData = data;
+
+            if (query) {
+                filteredData = filteredData.filter(item =>
+                    (item.Name || '').toLowerCase().includes(query) ||
+                    (item.Formula || '').toLowerCase().includes(query) ||
+                    (item.Category || '').toLowerCase().includes(query) ||
+                    (item.Brand || '').toLowerCase().includes(query)
+                );
+            }
+
+            if (categoryFilter) {
+                filteredData = filteredData.filter(item => item.Category === categoryFilter);
+            }
+
+            if (brandFilter) {
+                filteredData = filteredData.filter(item => item.Brand === brandFilter);
+            }
+
+            return filteredData;
         }
+
+        // Function to populate filter options
+        function populateFilterOptions(data, categoryFilter, brandFilter, selectedCategory = '', selectedBrand = '') {
+            // Clear existing options
+            categoryFilter.innerHTML = '<option value="">All Categories</option>';
+            brandFilter.innerHTML = '<option value="">All Brands</option>';
+
+            const availableCategories = new Set();
+            const availableBrands = new Set();
+
+            data.forEach(item => {
+                availableCategories.add(item.Category);
+                availableBrands.add(item.Brand);
+            });
+
+            // Add options to Category filter
+            availableCategories.forEach(category => {
+                if (category) {
+                    const option = document.createElement('option');
+                    option.value = category;
+                    option.textContent = category;
+                    if (category === selectedCategory) {
+                        option.selected = true;
+                    }
+                    categoryFilter.appendChild(option);
+                }
+            });
+
+            // Add options to Brand filter
+            availableBrands.forEach(brand => {
+                 if (brand) {
+                    const option = document.createElement('option');
+                    option.value = brand;
+                    option.textContent = brand;
+                     if (brand === selectedBrand) {
+                        option.selected = true;
+                    }
+                    brandFilter.appendChild(option);
+                }
+            });
+        }
+
 
         let globalData = [];
 
         async function init() {
             globalData = await loadData();
+
+            const categoryFilter = document.getElementById('categoryFilter');
+            const brandFilter = document.getElementById('brandFilter');
+
+             // Initial population of filter options with ALL globalData
+            populateFilterOptions(globalData, categoryFilter, brandFilter);
+
+            // Initial rendering
             renderTable(filterData(globalData, document.getElementById('searchInput').value));
 
             const searchInput = document.getElementById('searchInput');
             const suggestionsBox = document.getElementById('suggestions');
 
-            searchInput.addEventListener('input', () => {
+            function applyFilters() {
                 const query = searchInput.value.trim().toLowerCase();
-                const filteredData = filterData(globalData, query);
+                const category = categoryFilter.value;
+                const brand = brandFilter.value;
+                const filteredData = filterData(globalData, query, category, brand);
+                // Repopulate filter options based on the filtered data
+                populateFilterOptions(filteredData, categoryFilter, brandFilter, category, brand);
                 renderTable(filteredData);
-            });
+            }
+
+            // Event listeners for search
+            searchInput.addEventListener('input', applyFilters);
+
+            // Event listeners for category and brand filters
+            categoryFilter.addEventListener('change', applyFilters);
+            brandFilter.addEventListener('change', applyFilters);
+
 
             suggestionsBox.querySelectorAll('div').forEach(div => {
                 div.addEventListener('click', () => {
                     searchInput.value = div.textContent;
-                    const newFiltered = filterData(globalData, div.textContent);
-                    renderTable(newFiltered);
+                    applyFilters();
                     suggestionsBox.classList.add('hidden');
                 });
             });
