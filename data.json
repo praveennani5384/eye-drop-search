@@ -1364,5 +1364,85 @@
     "Complete the full course of treatment as prescribed by the doctor.",
     "Consult a doctor if symptoms worsen or persist."
   ]
+},
+  {
+  "Name": "Pantop 40 Tablet",
+  "Formula": "Pantoprazole (40 mg)",
+  "Category": "Proton Pump Inhibitor (PPI) / Anti-ulcer medicine",
+  "Brand": "Aristo Pharmaceuticals Pvt Ltd",
+  "uses": "Reduces stomach acid. Treats acid-related conditions like heartburn, acid reflux, gastroesophageal reflux disease (GERD), peptic ulcer disease (stomach and duodenal ulcers), erosive esophagitis, and Zollinger-Ellison syndrome.",
+  "conditions": [
+    "May cause common side effects like headache, diarrhea, nausea, abdominal pain, vomiting, flatulence, dizziness, and joint pain. These are usually temporary.",
+    "Prolonged use (especially over 1 year) may lead to Vitamin B12 deficiency, low levels of calcium and magnesium, and an increased risk of bone fractures (osteoporosis).",
+    "Not recommended for use if allergic to pantoprazole or other PPIs.",
+    "Inform your doctor if you have liver problems, stomach/intestinal cancer, or low magnesium levels.",
+    "May interact with certain medications like blood thinners (warfarin), antifungals (ketoconazole), anti-HIV drugs (atazanavir, nelfinavir), and methotrexate.",
+    "Use with caution in pregnant or breastfeeding women; consult a doctor.",
+    "Heartburn can sometimes be confused with symptoms of a heart attack; seek emergency medical attention if you experience chest pain, pain spreading to the arm/shoulder, nausea, sweating, and general ill feeling.",
+    "May cause false results in certain medical tests for neuroendocrine tumors; inform your doctor or lab staff if you are taking this medicine before such tests."
+  ]
+},
+  {
+  "Name": "Pan D Capsule PR",
+  "Formula": "Pantoprazole (40 mg) + Domperidone (30 mg) (Prolonged Release)",
+  "Category": "Proton Pump Inhibitor (PPI) & Prokinetic / Anti-reflux, Anti-ulcer, Antiemetic",
+  "Brand": "Aristo Pharmaceuticals Pvt Ltd",
+  "uses": "Reduces stomach acid and increases stomach and intestinal movement. Treats gastroesophageal reflux disease (GERD) or acid reflux, indigestion (dyspepsia), gastritis, peptic ulcer disease (stomach and duodenal ulcers), heartburn, and associated symptoms like nausea, vomiting, bloating, and upper abdominal discomfort.",
+  "conditions": [
+    "**Contraindicated if allergic** to pantoprazole, domperidone, or any other ingredients.",
+    "**Contraindicated in patients with severe liver impairment, heart conditions (e.g., prolonged QT interval, significant electrolyte disturbances), or prolactin-releasing pituitary tumors.**",
+    "**Not recommended for use in children under 5 years of age.**",
+    "**Consult a doctor immediately** if you experience chest pain, pain spreading to the arm/shoulder, nausea, sweating, and general ill feeling, as these can be symptoms of a heart attack.",
+    "**Use with extreme caution, or avoid**, if pregnant or breastfeeding, unless specifically advised by a doctor after careful consideration of risks vs. benefits.",
+    "**Inform your doctor about all other medications you are taking**, especially blood thinners (e.g., warfarin), certain antifungals (e.g., ketoconazole), anti-HIV drugs (e.g., atazanavir, nelfinavir), and methotrexate, due to significant drug interactions.",
+    "**Long-term use (over 1 year) may increase the risk of bone fractures and deficiencies of Vitamin B12 and magnesium; regular monitoring may be required.**"
+  ]
+},
+  {
+  "Name": "Omez Capsule",
+  "Formula": "Omeprazole (20 mg)",
+  "Category": "Proton Pump Inhibitor (PPI) / Anti-ulcer medicine",
+  "Brand": "Dr. Reddy's Laboratories Ltd",
+  "uses": "Reduces stomach acid. Treats acid-related conditions like gastroesophageal reflux disease (GERD), heartburn, stomach and duodenal ulcers, erosive esophagitis, and Zollinger-Ellison syndrome. Also used in combination with antibiotics to treat H. pylori infections.",
+  "conditions": [
+    "**Contraindicated if allergic** to omeprazole or any other proton pump inhibitors (e.g., pantoprazole, esomeprazole).",
+    "**Contraindicated if you are taking nelfinavir (an anti-HIV medication).**",
+    "**Seek immediate medical attention** if you experience chest pain, pain spreading to the arm/shoulder, nausea, sweating, and general ill feeling, as these can be symptoms of a heart attack.",
+    "**Long-term use (over 1 year) may increase the risk of bone fractures and deficiencies of Vitamin B12 and magnesium; regular monitoring may be required.**",
+    "**Inform your doctor about all other medications you are taking**, especially blood thinners (e.g., warfarin), certain antifungals (e.g., ketoconazole, posaconazole), anti-HIV drugs (e.g., atazanavir, nelfinavir), and methotrexate, due to significant drug interactions.",
+    "**Consult a doctor if symptoms do not improve after 14 days of over-the-counter use or if symptoms worsen.**"
+  ]
+},
+  {
+  "Name": "Wysolone 5 Tablet DT",
+  "Formula": "Prednisolone (5 mg)",
+  "Category": "Corticosteroid / Anti-inflammatory and Immunosuppressant",
+  "Brand": "Pfizer Ltd",
+  "uses": "Treats a wide variety of inflammatory and autoimmune conditions, including severe allergic reactions, asthma, rheumatic disorders (e.g., arthritis), skin and eye disorders, blood disorders, nephrotic syndrome, and to prevent organ rejection after transplantation.",
+  "conditions": [
+    "**Contraindicated if allergic** to prednisolone or any other corticosteroids.",
+    "**Contraindicated in patients with active systemic fungal infections or certain viral infections (e.g., herpes simplex eye infection), or who have recently received live vaccines.**",
+    "**Use with extreme caution, or avoid**, if pregnant or breastfeeding, unless specifically advised by a doctor after careful consideration of risks vs. benefits, as it may pass into breast milk.",
+    "**Inform your doctor about all other medications you are taking**, especially blood thinners (e.g., warfarin), certain antifungals (e.g., ketoconazole), anti-diabetic medications, and certain antibiotics, due to significant drug interactions.",
+    "**Long-term use can lead to serious side effects** including increased risk of infections, bone thinning (osteoporosis), high blood pressure, diabetes, eye problems (e.g., cataracts, glaucoma), and psychiatric disturbances (e.g., mood swings, depression).",
+    "**Do not stop taking this medicine abruptly** without consulting your doctor, as it can lead to withdrawal symptoms.",
+    "**Avoid being near people with infections** (especially chickenpox, shingles, measles) as this medicine suppresses the immune system."
+  ]
+},
+  {
+  "Name": "Omnacortil 5 Tablet DT",
+  "Formula": "Prednisolone (5 mg)",
+  "Category": "Corticosteroid / Anti-inflammatory and Immunosuppressant",
+  "Brand": "Macleods Pharmaceuticals Pvt Ltd",
+  "uses": "Treats a wide variety of inflammatory and autoimmune conditions such as severe allergic reactions, asthma, rheumatic disorders (e.g., arthritis), skin and eye disorders, blood disorders, nephrotic syndrome, and to prevent organ rejection after transplantation. Also used to manage high calcium levels in the body.",
+  "conditions": [
+    "**Contraindicated if allergic** to prednisolone or any other corticosteroids.",
+    "**Contraindicated in patients with active systemic fungal infections, certain viral infections (e.g., herpes simplex eye infection), or who have recently received live vaccines.**",
+    "**Use with extreme caution, or avoid**, if pregnant or breastfeeding, unless specifically advised by a doctor after careful consideration of risks vs. benefits.",
+    "**Inform your doctor about all other medications you are taking**, especially blood thinners (e.g., warfarin), certain antifungals (e.g., ketoconazole), anti-diabetic medications, and certain antibiotics, due to significant drug interactions.",
+    "**Do not stop taking this medicine abruptly** without consulting your doctor, as it can lead to severe withdrawal symptoms.",
+    "**Long-term use can lead to serious side effects** including increased risk of infections, bone thinning (osteoporosis), high blood pressure, diabetes, eye problems (e.g., cataracts, glaucoma), and psychiatric disturbances. Regular monitoring may be required.",
+    "**Avoid being near people with infections** (especially chickenpox, shingles, measles) as this medicine suppresses the immune system."
+  ]
 }
 ]
