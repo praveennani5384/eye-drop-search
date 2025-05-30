@@ -1322,5 +1322,47 @@
       "May cause blurred vision or mild irritation.",
       "Consult a doctor if symptoms worsen."
     ]
-  }
+  },
+  {
+  "Name": "Optiviral Eye Ointment",
+  "Formula": "Aciclovir (3% w/w)",
+  "Category": "Antiviral Ointment",
+  "Brand": "Entod Pharmaceuticals Ltd",
+  "uses": "Treats eye infections caused by Herpes simplex virus (e.g., ocular herpes, herpes simplex keratitis).",
+  "conditions": [
+    "May cause stinging sensation and eye redness immediately following application.",
+    "Temporary blurred vision and light sensitivity may occur.",
+    "Do not wear contact lenses while using this ointment.",
+    "Use with caution in pregnant or breastfeeding women; consult a doctor."
+  ]
+},
+  {
+  "Name": "Ocupol DX Eye Ointment",
+  "Formula": "Chloramphenicol (10mg) + Polymyxin B (10000 IU) + Dexamethasone (1mg)",
+  "Category": "Antibiotic & Steroid Ointment",
+  "Brand": "Centaur Pharmaceuticals Pvt Ltd",
+  "uses": "Treats bacterial eye infections, including conjunctivitis, and steroid-responsive inflammatory ocular conditions. Also used for corneal injuries caused by burns, radiation, or foreign objects.",
+  "conditions": [
+    "May cause eye discomfort, irritation, burning sensation, and temporary blurred vision.",
+    "Not for use in patients with narrow-angle glaucoma or fungal/viral eye infections (especially Herpes simplex keratitis).",
+    "Do not wear contact lenses while using this ointment.",
+    "Avoid prolonged use as it may lead to glaucoma or secondary infections.",
+    "Consult a doctor if symptoms worsen or persist.",
+    "Not recommended for use in pregnant or breastfeeding women without doctor's consultation."
+  ]
+},
+  {
+  "Name": "Ocupol Eye Ointment",
+  "Formula": "Polymyxin B (10000IU/gm) + Chloramphenicol (10mg/gm)",
+  "Category": "Antibiotic Ointment",
+  "Brand": "Centaur Pharmaceuticals Pvt Ltd",
+  "uses": "Treats bacterial eye infections, including conjunctivitis.",
+  "conditions": [
+    "May cause eye discomfort, irritation, burning sensation, and temporary blurred vision.",
+    "Do not wear contact lenses until your infection clears up.",
+    "Do not touch the tip of the tube to any surface or to your eye to avoid contamination.",
+    "Complete the full course of treatment as prescribed by the doctor.",
+    "Consult a doctor if symptoms worsen or persist."
+  ]
+}
 ]
