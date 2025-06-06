@@ -140,7 +140,7 @@
     "Name": "Bepolast eye drops",
     "Formula": "bepostatin besilate opthalamic solution (1.5%w/v)",
     "Category": "Antihistamine",
-    "Brand": "apple",
+    "Brand": "Apple Pharmaceuticals",
     "uses": "Relieves itchy eyes due to allergies.",
     "conditions": []
   },
@@ -1444,5 +1444,16 @@
     "**Long-term use can lead to serious side effects** including increased risk of infections, bone thinning (osteoporosis), high blood pressure, diabetes, eye problems (e.g., cataracts, glaucoma), and psychiatric disturbances. Regular monitoring may be required.",
     "**Avoid being near people with infections** (especially chickenpox, shingles, measles) as this medicine suppresses the immune system."
   ]
-}
+},
+  {
+    "Name": "koji max",
+    "Formula": "koji max(Multiple formulas)",
+    "Category": "Skin high lightner",
+    "Brand": "Apple Pharmaceuticals",
+    "uses": "Treats bacterial eye infections.",
+    "conditions": [
+      "May cause blurred vision or mild irritation.",
+      "Consult a doctor if symptoms worsen."
+    ]
+  }
 ]
