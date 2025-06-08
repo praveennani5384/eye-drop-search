@@ -225,7 +225,7 @@
   },
   {
     "Name": "Cyclotears 0.5%",
-    "Formula": "Ciclosporin (0.05% w/v)",
+    "Formula": "Cyclosporin (0.05% w/v)",
     "Category": "Immunomodulator",
     "Brand": "Entod Pharmaceuticals Ltd",
     "uses": "Increases tear production in chronic dry eye.",
@@ -1454,5 +1454,58 @@
     "conditions": [
       "dark cicles treatment"
     ]
-  }
+  },
+{
+  "Name": "Ganfort Eye Drop",
+  "Formula": "Bimatoprost (0.3mg/ml) + Timolol (5mg/ml)",
+  "Category": "Antibiotic Ointment",
+  "Brand": "AbbVie Therapeutics India Private Limited",
+  "uses": "Treats bacterial eye infections.",
+  "conditions": [
+    "May cause blurred vision or mild irritation.",
+    "Consult a doctor if symptoms worsen."
+  ]
+},
+  {
+  "Name": "Cyclisis PF Eye Drop",
+  "Formula": "Cyclosporine (0.05% w/v)",
+  "Category": "Immunosuppressant (Ocular Lubricant)",
+  "Brand": "Intas Pharmaceuticals Ltd.",
+  "uses": "Treats dry eyes (keratoconjunctivitis sicca) and severe keratitis by increasing tear production and reducing inflammation.",
+  "conditions": [
+    "May cause blurred vision or burning sensation in the eyes.",
+    "Redness, irritation, or discomfort in the eyes.",
+    "Consult a doctor if symptoms persist or worsen.",
+    "Do not use if pregnant or breastfeeding without consulting a doctor.",
+    "Remove contact lenses before use and wait at least 15 minutes before reinserting."
+  ]
+},
+  {
+    {
+  "Name": "Bimat Eye Drop",
+  "Formula": "Bimatoprost (0.03% w/v)",
+  "Category": "Anti-glaucoma / Prostaglandin analogue",
+  "Brand": "Ajanta Pharma",
+  "uses": "Treats open-angle glaucoma and ocular hypertension; increases eyelash length, thickness, and darkness.",
+  "conditions": [
+    "May cause eye redness, itching, burning, eye pain, or dry eyes.",
+    "Can cause darkening of eyelid skin and gradual increase in iris pigmentation (permanent).",
+    "Remove contact lenses before use."
+  ]
+},
+  {
+  "Name": "L-Pred Ophthalmic Suspension",
+  "Formula": "Loteprednol Etabonate (0.5% w/v)",
+  "Category": "Corticosteroid / Anti-inflammatory",
+  "Brand": "Allergan Healthcare India Pvt Ltd",
+  "uses": "Treats redness and swelling in the eyes caused by infection, allergy, or post-operative inflammation and pain following ocular surgery.",
+  "conditions": [
+    "May cause eye irritation, watery eyes, or burning sensation.",
+    "Do not use if you have viral (e.g., herpes simplex keratitis), fungal, or mycobacterial eye infections.",
+    "Prolonged use can lead to cataracts or glaucoma.",
+    "Consult a doctor if pregnant or breastfeeding.",
+    "Do not touch the dropper tip to avoid contamination."
+  ]
+}
+    
 ]
